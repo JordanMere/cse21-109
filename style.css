@@ -23,6 +23,9 @@ a{
 li{
     list-style: none;
 }
+section{
+    padding: 3rem 0 2rem;
+}
 img{
     width: 100%;
 
@@ -56,7 +59,7 @@ header{
 }
 /*Logo*/
 .Logo{
-    font-size: 0.7rem;
+    font-size: 1.1rem;
     color: var(--text-color);
     font-weight: 600;
     text-transform: uppercase;
@@ -102,17 +105,17 @@ header{
     object-fit: cover;
     object-position: center;
 }
-/*Navbar*/
-.navbar{
-   position: fixed;
-   transform: translateY(-50%);
-   left: 18px;
-   display: flex;
-   flex-direction: column;
-   row-gap: 2.1rem; 
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 14px;
+    border: 1px solid hsl(200 100% 99% / 5%);    
 }
-
-
+.heading-title{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
 
 
 
