@@ -1,11 +1,127 @@
-body {
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600;1,700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
     margin: 0;
-    background-color: aqua;
-    text-align: center;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
 }
-.logo{
-    text-indent: -999999px;
-    background-image: url(/MyLogo.png);
-    width: 960px;
-    height: 148px;
+
+/*some Variables*/
+:root {
+    --main-color: #ffb43a;
+    --hover-color: hsl(37,94%,57%);
+    --body-color: #1e1e2a;
+    --container-color: #2d2e37;
+    --text-color: #fcfeff;
 }
+a{
+  text-decoration: none;  
+}
+li{
+    list-style: none;
+}
+section{
+    padding: 3rem 0 2rem;
+}
+img{
+    width: 100%;
+
+}
+.bx{
+    cursor: pointer;
+}
+body{
+    background: var(--body-color);
+    color: var(--text-color)
+}
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--body-color);
+    z-index: 100;
+}
+/*Nav*/
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+/*Logo*/
+.Logo{
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 auto 0 0;
+}
+
+.Logo span{
+    color: var(--main-color);
+}
+/*Search box*/
+.Search-box{
+    max-width: 240px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 0.7rem;
+    padding: 8px 15px;
+    background: var(--container-color);
+    border-radius: 4rem;
+}
+.Search-box .bx {
+    font-size: 1,1rem;
+}
+.Search-box .bx:hover {
+    color: var(--main-color);
+}
+#search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    background: transparent;
+    font-size: 0.9rem;   
+}
+/*User*/
+.user{
+    display: flex;
+}
+.user-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 14px;
+    border: 1px solid hsl(200 100% 99% / 5%);    
+}
+.heading-title{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
